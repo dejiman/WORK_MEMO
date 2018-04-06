@@ -17,3 +17,12 @@ $ sudo apt-get update
 $ sudo apt-get install oracle-java(no)-installer
 
 ex)$ sudo apt-get install oracle-java8-installer
+
+
+
+** check system info (CPU/MEM)
+
+vi /proc/meminfo
+
+vi /proc/cpuinfo
+
