@@ -8,6 +8,8 @@
 
 $ sudo apt-get update
 
+-----> when error occured , system reboot & procced update or install proccess 
+
 3. install oracle java 
   
   *(no) means version = 6,7,8,9 available 
@@ -15,4 +17,3 @@ $ sudo apt-get update
 $ sudo apt-get install oracle-java(no)-installer
 
 ex)$ sudo apt-get install oracle-java8-installer
-
