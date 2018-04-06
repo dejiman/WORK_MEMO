@@ -1,0 +1,18 @@
+ ** how to oracle java install **
+ 
+1. add to repository with oracle ppa infromation
+  
+  $ sudo add-apt-repository ppa:webupd8team/java
+
+2. update repository 
+
+$ sudo apt-get update
+
+3. install oracle java 
+  
+  *(no) means version = 6,7,8,9 available 
+  
+$ sudo apt-get install oracle-java(no)-installer
+
+ex)$ sudo apt-get install oracle-java8-installer
+
