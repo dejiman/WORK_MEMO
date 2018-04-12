@@ -1,0 +1,40 @@
+* install BMP280 
+
+1. i2c Enable => raspberry pi configuration 
+
+2. connect raspberry pi 
+
+ 1 => VIN/VCC
+ 
+ 6 => GND
+ 
+ 3 => SDA or SCK
+ 
+ 5 => SCL or SDI
+
+* ic2 address check 
+
+ i2cdetect -y 1
+ 
+ * install BMP280 library 
+ 
+ git clone https://github.com/TomFoerster/BMP280.git
+ 
+ sudo python setup.py install 
+ 
+ * code for check BMP280
+  
+import time
+
+import BMP280.BMP280 as BMP280
+
+sensor = BMP280.BMP280(modep=BMP280.BMP280_ULTRAHIGHRES,modet=BMP280.BMP280_T_O2,filter=BMP280.BMP280_FILTER_OFF,address=BMP280.BMP280_I2CADDR2)
+
+while True:
+        temp1, pressure1 = sensor.read_temperature_pressure()
+        
+        altitude1 = sensor.read_sealevel_pressure(altitude_m= 330.0)
+
+        print("temp : " + str(temp1) + ", pressure : " + str(pressure1) + ", altitude : " + str(altitude1) )
+        
+        time.sleep(10)
