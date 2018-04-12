@@ -68,3 +68,10 @@ DELETE FROM mysql.user WHERE Host='%' AND User='root';
 
 FLUSH PRIVILEGES; 
 
+###  status, stop , start mysql ###
+
+/etc/init.d/mysqld status
+/etc/init.d/mysqld stop
+/etc/init.d/mysqld start
+
+
