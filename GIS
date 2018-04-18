@@ -1,0 +1,18 @@
+* convert TIN polygon -> contuor lines
+
+1. open global Mapper
+
+2. load xxx.DWG file 
+
+3. select proper Projection 
+
+4. select 'create Elevation Grid' menu 
+
+5. check result, if needed save result Raster image to arc-ascii file ( result format is image, so it's raster)
+
+6. select 'create Contour' menu 
+
+7. choose contour interval by meter and select 'OK'
+
+8. check the result and save file as vector type  ( result is lines , so it's vector )
+
