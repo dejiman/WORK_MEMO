@@ -1,0 +1,20 @@
+1. create database 
+
+ * use databasenam
+ 
+2. check database list 
+ 
+ * show dbs
+
+  - create and insert some data , then can see it. 
+  - how to insert data   
+  
+* db.book.insert({"name":"test", "usecode":"1111"});
+  
+3. check now using database
+
+ db
+ 
+4. eliminate database
+
+ db.dropDatabase()
