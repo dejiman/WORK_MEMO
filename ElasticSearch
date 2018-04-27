@@ -33,5 +33,13 @@ $ tar xvf elasticsearch-x.x.x.tar.gz
  * curl 'localhost:9200/_cat/health?v'
  
  
+  7. japanese analysis 
+  * in case of korean , install seunjeon 
+  
+  cd elastichome/bin 
+  sudo ./elasticsearch-plugin install analysis-kuromoji
+  
+  
+ 
 
 
