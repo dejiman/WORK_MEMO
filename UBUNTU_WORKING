@@ -1,0 +1,3 @@
+local ip check 
+ * netstat -an 
+
