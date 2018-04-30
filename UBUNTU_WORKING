@@ -1,3 +1,6 @@
 local ip check 
  * netstat -an 
+ 
+opend PORT check
 
+ * netstat -nap | grep LISTEN
