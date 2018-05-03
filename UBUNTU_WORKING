@@ -4,3 +4,16 @@ local ip check
 opend PORT check
 
  * netstat -nap | grep LISTEN
+
+
+ search string in file 
+ #global reular expression print
+
+ *grep -r "" /insert path to search 
+ 
+ 
+ 
+vim 
+ search :'words' 
+
+
