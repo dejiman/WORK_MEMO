@@ -6,9 +6,6 @@ sudo apt-get install nginx
 
 nginx -v 
 
-
-
-
 // 시작
 
 $ sudo service nginx start
