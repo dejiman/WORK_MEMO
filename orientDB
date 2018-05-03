@@ -1,0 +1,20 @@
+##### orient DB  is made with java  #####
+ 
+ install is very simple 
+ 
+ download -> install ? 
+
+1. download
+ - orientdb.com/download
+ 
+2. untar & start
+ - untar -xzvf downloaded_orinetDB.tar 
+ - orientDB_HOME/bin/server.sh  
+ - first start time , insert & confirm passwd 
+ 
+3. run orientDB studio
+
+ - localhost:2480
+ - login -> root/rootpasswd
+ - schema -> greatfulDeadConcert (sample data)
+ 
