@@ -18,3 +18,104 @@
 4. eliminate database
 
  db.dropDatabase()
+
+##### mongodb dml syntax #######
+
+* existing database search
+
+show dbs 
+
+* select database to use
+use databasename 
+
+* delete database
+db.dropDatabase()
+
+*create collection 
+db.cretateCollection({name, [options]})
+
+* exsiting collections 
+show collections
+
+* count of collection's documents
+db.collection_name.count()
+
+* delete collection
+db.collection_name.drop()
+
+* select document syntax
+db.collection_name.find()
+
+db.collection_name.find({condition}).pretty()
+ -> pretty means trimed documents
+ 
+db.collection_name.find({condition}, projection)
+ -> projection means that fields to show 
+ -> comparison condition $eq, $gt, $lt, $lte, $ne, $in, $nin 
+ -> logical condition $or, $and , $not, $nor
+ -> regex condition 
+ -> where makes using javascript expression 
+ 
+ -> etc
+  * $slice
+  * elemMatch
+  * sort()
+  * limit()
+  * skip()
+  
+  * update example
+  update value
+   > db.people.update( { name: "Abet" }, { $set: { age: 20 } } )
+   replace document
+   > db.people.update( { name: "Betty" }, { "name": "Betty 2nd", age: 1 })
+   remove field
+   > db.people.update( { name: "David" }, { $unset: { score: 1 } } )
+   
+   if does'nt exist, insert newly 
+   > db.people.update( { name: "Elly" }, { name: "Elly", age: 17 }, { upsert: true } )
+ 
+  specific field update
+   > db.people.update(
+   ... { age: { $lte: 20 } },
+   ... { $set: { score: 10 } },
+   ... { multi: true }
+   ... )
+  
+  push array filed value
+  > db.people.update(
+  ... { name: "Charlie" },
+  ... { $push: { skills: "angularjs" } }
+  ... )
+  push and , sort 
+  > db.people.update(
+   ... { name: "Charlie" },
+   ... { $push: {
+   ...     skills: {
+   ...         $each: [ "c++", "java" ],
+   ...         $sort: 1
+   ...     }
+   ...   }
+   ... }
+   ... )
+   
+  remove value from array field 
+  > db.people.update(
+   ... { name: "Charlie" },
+   ... { $pull: { skills: "mongodb" } }
+   ... )
+   
+  remove several value from array field  
+  db.people.update(
+   ... { name: "Charlie" },
+   ... { $pull: { skills: { $in: ["angularjs", "java" ] } } }
+   ... )
+  
+* insert document syntax
+db.collection_name.insert({shchema_name:data , ... })
+
+db.collection_name.update({find condition},{$set:{update data}}
+
+db.collection_name.remove({})
+
+* delete document syntax
+db.collection_name.remove({find condition})
