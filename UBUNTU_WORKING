@@ -11,9 +11,28 @@ opend PORT check
 
  *grep -r "" /insert path to search 
  
- 
- 
 vim 
  search :'words' 
 
+
+** install tomcat on ubuntu 
+-install 
+sudo apt-get install tomcat8
+
+-remove
+sudo apt-get remove tomcat8
+
+-status 
+ps -ef|grep tomcat
+
+-start
+sudo service tomcat8 start
+-stop
+sudo service tomcat8 stop
+-restart
+sudo service tomcat8 restart
+
+#  Tomcat path
+ /usr/share/tomcat8  →  executable &l ibraries
+ /var/lib/tomcat8  →  conf & webapps
 
