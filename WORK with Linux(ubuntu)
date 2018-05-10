@@ -53,6 +53,62 @@ vi /proc/cpuinfo
  
  node -v
  
+
+  ** how to oracle java install **
+ 
+1. add to repository with oracle ppa infromation
+  
+  $ sudo add-apt-repository ppa:webupd8team/java
+
+2. update repository 
+
+$ sudo apt-get update
+
+-----> when error occured , system reboot & procced update or install proccess 
+
+3. install oracle java 
+  
+  *(no) means version = 6,7,8,9 available 
+  
+$ sudo apt-get install oracle-java(no)-installer
+
+ex)$ sudo apt-get install oracle-java8-installer
+
+
+** check system info (CPU/MEM)
+
+vi /proc/meminfo
+
+vi /proc/cpuinfo
+
+
+*** install nodejs on unbuntu 
+
+[ generally ]
+ using nvm , install nodejs recent
+ 
+ sudo apt-get update
+ 
+ sudo apt-get install nodejs
+ 
+ sudo apt-get install npm 
+ 
+ 
+ [ using nvm ]
+ 
+ sudo apt-get update 
+ sudo apt-get install build-essential libssl-dev
+ 
+ sudo apt-get install curl 
+ 
+ curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh -o install_nvm.sh
+ 
+ ./ install_nvm.sh
+ 
+ nvm install 9.10.1
+ 
+ node -v
+ 
  
  
  
