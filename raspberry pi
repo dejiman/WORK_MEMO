@@ -275,7 +275,22 @@ while True:
     time.sleep(1)
 
 
+****** camera with button ****
 
+import time
+import picamera
+import RPi.GPIO as GPIO  # new
+
+GPIO.setmode(GPIO.BCM)  # new
+GPIO.setup(21, GPIO.IN, GPIO.PUD_UP)  # check GPIO number and use it
+
+with picamera.PiCamera() as camera:
+    camera.start_preview()
+    GPIO.wait_for_edge(21, GPIO.FALLING)  # new
+    camera.capture('/home/pi/Desktop/image.jpg')
+    camera.stop_preview()
+    
+    
 
 
 
