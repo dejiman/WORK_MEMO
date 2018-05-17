@@ -201,3 +201,13 @@ $ sudo nginx -s reload
 // configuration file syntax check
 
 $ sudo nginx -t
+
+
+
+
+***** 리눅스 버전 확인 ******
+
+grep . /etc/*-release
+    or
+cat /etc/*-release | uniq
+
