@@ -1,0 +1,9 @@
+* NIC teaming powershell script  - test and proved
+* for improving bandwidth and network latency 
+
+$teama = New-NetLbfoTeam -Name teama -TeamMembers "Ethernet","wifi" -TeamingMode SwitchIndependent -Confirm:$false
+get-netadapter teama | get-netipaddress -addressfamily ipv4 | remove-netipaddress -Confirm:$false
+get-netadapter teama | New-NetIPAddress -IPAddress '192.168.10.125' -AddressFamily IPv4 -PrefixLength 24 -defaultgateway '192.168.10.1'
+get-netAdapter teama | Set-DnsClientServerAddress -ServerAddresses '168.126.63.1','192.168.10.1'
+
+** delete teaming  shell script will be add ....
