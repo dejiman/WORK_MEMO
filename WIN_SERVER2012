@@ -7,3 +7,7 @@ get-netadapter teama | New-NetIPAddress -IPAddress '192.168.10.125' -AddressFami
 get-netAdapter teama | Set-DnsClientServerAddress -ServerAddresses '168.126.63.1','192.168.10.1'
 
 ** delete teaming  shell script will be add ....
+
+** tested and proved
+$team = Get-NetLbfoTeam -Name teama
+Remove-NetLbfoTeam -InputObject $team
