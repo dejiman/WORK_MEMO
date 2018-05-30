@@ -119,3 +119,8 @@ db.collection_name.remove({})
 
 * delete document syntax
 db.collection_name.remove({find condition})
+
+
+*** find like ***
+
+db.collectionname.find({colname:/condition/});
