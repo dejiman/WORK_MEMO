@@ -1,0 +1,23 @@
+**** install on linux (ubuntu 16.0.4)
+ 
+ 1. download postgresql 
+  wget https://ftp.postgresql.org/pub/source/v9.6.5/postgresql-9.6.5.tar.gz
+ 2. untar and cd 
+  tar -xvzf postgresql-9.6.5.tar.gz
+  cd postgresql-9.6.5
+ 3. config
+   ./configure --prefix=$HOME/postgresql --enable-debug
+   ** trouble shooting
+    sudo apt-get install gcc
+    sudo apt-get install libreadline-dev
+    sudo apt-get install zlib1g-dev
+ 4. make 
+   make 
+   ** trouble shooting
+   sudo apt-get install make
+   sudo apt-get install bison
+   sudo apt-get install flex
+ 5. install 
+   make install
+   
+ 6. initdb
