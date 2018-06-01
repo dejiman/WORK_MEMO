@@ -1,4 +1,4 @@
-**** install on linux (ubuntu 16.0.4)
+ **** install on linux (ubuntu 16.0.4)
  
  1. download postgresql 
   wget https://ftp.postgresql.org/pub/source/v9.6.5/postgresql-9.6.5.tar.gz
@@ -27,3 +27,5 @@ or
 
  sudo apt-get install postgresql
  
+ edit 
+/var/lib/pgsql/{version}/data/pg_hba.conf
