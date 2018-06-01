@@ -21,3 +21,9 @@
    make install
    
  6. initdb
+
+
+or 
+
+ sudo apt-get install postgresql
+ 
