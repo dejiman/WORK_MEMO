@@ -32,13 +32,12 @@ or
 
 **** 
 
-big / large DB  Design 
-1. design 1 row less then 4k bye 
- (lessen hdd header silinder's movement )
-2. DB is io 
+big / large DB  Design or setup hardware's no.1 rule.
+1. DB is io 
  means DB's overhead is happen on storage.  
  so i prefer ssd than common storage . 
  big memory doesn't mean less io .
- 4hour to 20 min. not a joke
-
-
+  4hours to 20 mins. not a joke
+ 
+2. design 1 row less then 4k bye 
+ (lessen hdd header silinder's movement )
