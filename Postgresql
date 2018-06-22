@@ -29,3 +29,16 @@ or
  
  edit 
 /var/lib/pgsql/{version}/data/pg_hba.conf
+
+**** 
+
+big / large DB  Design 
+1. design 1 row less then 4k bye 
+ (lessen hdd header silinder's movement )
+2. DB is io 
+ means DB's overhead is happen on storage.  
+ so i prefer ssd than common storage . 
+ big memory doesn't mean less io .
+ 4hour to 20 min. not a joke
+
+
