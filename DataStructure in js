@@ -45,9 +45,9 @@
 	function SelectionSort(arr) {
 		var len = arr.length;
 		var min;
-		for (var outer = 0; outer < length - 1; ++outer) {
+		for (var outer = 0; outer < len  - 1; ++outer) {
 			min = outer;
-			for (var inner = outer + 1; inner < length; ++inner) {
+			for (var inner = outer + 1; inner < len ; ++inner) {
 				if (arr[inner] < arr[min]) {
 					min = inner;
 				}
