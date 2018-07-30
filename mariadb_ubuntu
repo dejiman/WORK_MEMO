@@ -1,0 +1,6 @@
+####우분투 mariadb 원격 접속 설정 시, address-bind 설정하는 위치
+
+sudo vi /etc/mysql/mariadb.conf.d/50-server.cnf
+  #bind-address	  = 127.0.0.1 
+  bind-address	  = 0.0.0.0 
+sudo service mysql restart
