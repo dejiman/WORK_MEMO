@@ -41,3 +41,10 @@ big / large DB  Design or setup hardware's no.1 rule.
  
 2. design 1 row less then 4k bye 
  (lessen hdd header silinder's movement )
+
+***postgresql  table column and data type , length query ****
+
+select column_name, data_type, character_maximum_length 
+from INFORMATION_SCHEMA.COLUMNS  
+
+
